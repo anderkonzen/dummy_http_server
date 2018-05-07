@@ -10,6 +10,7 @@ defmodule DummyHttpServer.Application do
     children = [
       # Starts a worker by calling: DummyHttpServer.Worker.start_link(arg)
       # {DummyHttpServer.Worker, arg},
+      Plug.Adapters.Cowboy.child_spec(scheme: :http, plug: DummyHttpServer.Router, options: [port: 8085])
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
