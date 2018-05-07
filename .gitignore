@@ -22,3 +22,5 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 dummy_http_server-*.tar
 
+# Ignore distillery artifacts
+/rel/
