@@ -24,6 +24,7 @@ defmodule DummyHttpServer.MixProject do
     [
       {:cowboy, "~> 1.0"},
       {:plug, "~> 1.5"},
+      {:jason, "~> 1.0"},
       {:distillery, "~> 1.5"}
     ]
   end
